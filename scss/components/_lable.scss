@@ -1,0 +1,34 @@
+.partners-section__avatar-lable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px $color-white;
+}
+
+.bradley {
+  background-color: $color-red;
+}
+
+.marie {
+  background-color: #19D4CA;
+}
+
+.diana {
+  background-color: #FFA710;
+}
+
+.christopher {
+  background-color: #667DF3;
+}
+
+.icon-lable {
+  width: 16px;
+  height: 16px;
+  fill: $color-white;
+}

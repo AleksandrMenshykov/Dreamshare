@@ -3,7 +3,7 @@
   color: $color-white;
   border-radius: 40px;
   font-weight: 700;
-  border: none;
+  border: 1px solid transparent;
   line-height: 17px;
   cursor: pointer;
 }
@@ -12,5 +12,15 @@
 
   &__button {
     padding: 12px 20px;
+    transition: .2s;
+
+    &:hover {
+      background-color: #de4747;
+    }
+
+    &:active {
+      border: 1px inset red;
+      background-color: #943737;
+    }
   }
 }
