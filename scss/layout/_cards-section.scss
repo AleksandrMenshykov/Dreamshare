@@ -1,0 +1,78 @@
+.cards-section {
+  padding-top: 90px;
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $color-white;
+    width: 300px;
+    height: 400px;
+    padding: 20px 25px;
+    border-radius: 4px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%);
+      border-radius: 4px;
+    }
+
+    &--card-1 {
+      background-image: url(../img/card-1.jpg);
+      background-repeat: no-repeat;
+    }
+
+    &--card-2 {
+      background-image: url(../img/card-2.jpg);
+      background-repeat: no-repeat;
+    }
+
+    &--card-3 {
+      background-image: url(../img/card-3.jpg);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.card-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.card__step {
+  display: inline-block;
+  background-color: $color-red;
+  padding: 4px 14px;
+  border-radius: 40px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-block-end: 15px;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-block-end: 10px;
+}
+
+.card-desc {
+  font-family: $roboto;
+  line-height: 1;
+  color: $color-desc-card;
+
+}

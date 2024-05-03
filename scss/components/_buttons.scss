@@ -1,0 +1,16 @@
+.button {
+  background-color: $color-red;
+  color: $color-white;
+  border-radius: 40px;
+  font-weight: 700;
+  border: none;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.hero-section {
+
+  &__button {
+    padding: 12px 20px;
+  }
+}
