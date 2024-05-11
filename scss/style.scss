@@ -10,4 +10,35 @@
 @import 'layout/hero-section';
 @import 'layout/cards-section';
 @import 'layout/partners-section';
+@import 'layout/form-section';
 @import 'layout/footer';
+
+.grid-section {
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__card {
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $color-white;
+  }
+
+  .card-5 {
+    grid-column: 2 / 4;
+  }
+
+  .card-6 {
+    grid-column: 1 / 3;
+  }
+}
