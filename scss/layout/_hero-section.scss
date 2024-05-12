@@ -45,3 +45,25 @@
     margin-bottom: 33px;
   }
 }
+
+@media (max-width:660px) {
+  .hero-section {
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+      margin-block-end: 5px;
+      padding-block-start: 200px;
+    }
+
+    &__desc {
+      font-size: 18px;
+      line-height: 24px;
+      margin-block-end: 15px;
+    }
+
+    &__button {
+      padding-inline: 47px;
+    }
+  }
+}

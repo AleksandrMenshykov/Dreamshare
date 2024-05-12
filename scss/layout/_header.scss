@@ -7,10 +7,19 @@
   width: 100%;
   padding: 45px 0 5px;
 
+  @media (max-width:550px) {
+    padding: 20px 0 26px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 550px) {
+      flex-direction: column-reverse;
+      gap: 97px;
+    }
   }
 
   &__logo {
@@ -18,10 +27,6 @@
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
-
-    @media (max-width:450px) {
-      display: none;
-    }
   }
 
   &__auth {

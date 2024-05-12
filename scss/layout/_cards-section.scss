@@ -1,11 +1,22 @@
 .cards-section {
   padding-top: 90px;
 
+  @media (max-width:660px) {
+    padding-top: 35px;
+  }
+
   &__cards {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width:768px) {
+      justify-content: center;
+      gap: 10px;
+    }
   }
 
   &__card {
@@ -14,12 +25,18 @@
     flex-direction: column;
     justify-content: flex-end;
     color: $color-white;
-    width: 300px;
+    flex: 0 1 300px;
     height: 400px;
     padding: 20px 25px;
     border-radius: 4px;
     transition: .4s;
     cursor: pointer;
+
+    @media (max-width:768px) {
+      flex: 1 1 auto;
+      background-size: cover;
+      background-position: center;
+    }
 
     &:hover {
       transform: scale(1.1);
