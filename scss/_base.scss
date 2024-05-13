@@ -33,6 +33,11 @@ ul {
 
 @media (max-width:660px) {
   .section {
-    padding-bottom: 35px;
+    padding-block: 0 35px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    line-height: 27px;
   }
 }
