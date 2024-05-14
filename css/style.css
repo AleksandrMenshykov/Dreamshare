@@ -370,11 +370,19 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+@media (max-width: 550px) {
+  .grid-section__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .grid-section__card {
   position: relative;
 }
 .grid-section__card img {
   display: block;
+  width: 100%;
   border-radius: 4px;
 }
 .grid-section__card::before {
@@ -407,8 +415,18 @@ ul {
 .form-section {
   padding-block-end: 100px;
 }
-.form-section-title {
-  margin-block-end: 48px;
+@media (max-width: 550px) {
+  .form-section {
+    padding-block-end: 40px;
+  }
+}
+.form-section__title {
+  margin-block-end: 43px;
+}
+@media (max-width: 550px) {
+  .form-section__title {
+    margin-block-end: 9px;
+  }
 }
 .form-section__desc {
   font-family: "Roboto", "sans-serif";
@@ -418,10 +436,20 @@ ul {
   margin-block-end: 25px;
   color: #666666;
 }
+@media (max-width: 550px) {
+  .form-section__desc {
+    margin-block-end: 15px;
+  }
+}
 .form-section form {
   display: flex;
   justify-content: center;
-  gap: 11px;
+  gap: 10px;
+}
+@media (max-width: 550px) {
+  .form-section form {
+    flex-direction: column;
+  }
 }
 .form-section .form-search {
   flex: 0 1 300px;
@@ -431,6 +459,11 @@ ul {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
   padding: 14px 14px 10px;
   outline-color: grey;
+}
+@media (max-width: 550px) {
+  .form-section .form-search {
+    flex-basis: auto;
+  }
 }
 .form-section .form-search::placeholder {
   font-family: "Roboto", "sans-serif";
